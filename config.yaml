@@ -1,0 +1,92 @@
+---
+hardware:
+    steppers:
+        Xstepper:
+            name: "X axis stepper"
+            pins:
+                step:
+                    name: "Step pin"
+                    val: 10
+                direction:
+                    name: "Direction pin"
+                    val: 11
+            parameters:
+                defaultDirection:
+                    name: "Default direction (axis starts at its trailer)"
+                    val: 1
+                delay:
+                    name: "Delay used by onestep() function (one step takes 2*delay time) [in milliseconds]"
+                    val: 10
+                stepsPerRevolution:
+                    name: "Amount of steps per full revolution"
+                    val: 200
+                wheelRadius:
+                    name: "Radius of the wheel used on this stepper [in millimeters]"
+                    val: 50
+                    formula: "2 * pi * Radius / stepsPerRevolution"
+        Ystepper:
+            name: "Y axis stepper"
+            pins:
+                step:
+                    name: "Step pin"
+                    val: 12
+                direction:
+                    name: "Direction pin"
+                    val: 13
+            parameters:
+                defaultDirection:
+                    name: "Default direction (axis starts at its trailer)"
+                    val: 1
+                delay:
+                    name: "Delay used by onestep() function (one step takes 2*delay time) [in milliseconds]"
+                    val: 10
+                stepsPerRevolution:
+                    name: "Amount of steps per full revolution"
+                    val: 200
+                wheelRadius:
+                    name: "Radius of the wheel used on this stepper [in millimeters]"
+                    val: 50
+                    formula: "2 * pi * Radius / stepsPerRevolution"
+        Zstepper:
+            name: "Z axis stepper"
+            pins:
+                step:
+                    name: "Step pin"
+                    val: 10
+                direction:
+                    name: "Direction pin"
+                    val: 11
+            parameters:
+                defaultDirection:
+                    name: "Default direction (axis starts at its trailer)"
+                    val: 1
+                delay:
+                    name: "Delay used by onestep() function (one step takes 2*delay time) [in milliseconds]"
+                    val: 10
+                stepsPerRevolution:
+                    name: "Amount of steps per full revolution"
+                    val: 200
+                wheelRadius:
+                    name: "Radius of the wheel used on this stepper [in millimeters]"
+                    val: 50
+                    formula: "2 * pi * Radius / stepsPerRevolution"
+    rails:
+        Xrail:
+            name: "X axis rail"
+            parameters:
+                lenght:
+                    name: "X axis rail lenght (effective for movement) [in millimeters]"
+                    val: 2000
+        Yrail:
+            name: "Y axis rail"
+            parameters:
+                lenght:
+                    name: "Y axis rail lenght (effective for movement) [in millimeters]"
+                    val: 2000
+        Zrail:
+            name: "Z axis rail"
+            parameters:
+                lenght:
+                    name: "Z axis rail lenght (effective for movement) [in millimeters]"
+                    val: 2000
+...
