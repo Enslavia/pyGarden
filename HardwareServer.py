@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 import basicCommands.MoveToPosition as MoveTo
-from math import pi
 from multiprocessing import Process
+import yaml
 
 # def moveToPosition(start, finish, axisLenghts, stepperWheelsR, stepsPerRevolution, stepPins, directionPins, directionValues, stepDelays):
 #     selfName = 'moveToPosition'
@@ -47,4 +47,10 @@ if __name__ == "__main__":
     directionValues     = [0, 0, 1]
     stepDelays          = [0.005, 0.005, 0.005]
     MoveTo.moveToPosition(start, finish, axisLenghts, stepperWheelsR, stepsPerRevolution, stepPins, directionPins, directionValues, stepDelays)
-
+    test = 0
+    with open("config.yaml", 'r') as stream:
+        try:
+            test = (yaml.load(stream))
+        except yaml.YAMLError as exc:
+            print(exc)
+    print test['hardware']['steppers']['Xstepper']['pins']['step']['val']
