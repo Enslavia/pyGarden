@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hardwareList>
+<hardwareList name="roboGarden hardware">
+    <hardwarePiece name="Xstepper">
+        <title>
+            X axis stepper
+        </title>
+        <pins>
+            <step val="10">
+                Step pin
+            </step>
+            <direction val="11">
+                Direction pin
+            </direction>
+        </pins>
+        <params>
+            <defaultDirection val="1">
+                Default direction (axis starts at its trailer)
+            </defaultDirection>
+            <delay val="10">
+                Delay used by onestep() function (one step takes 2*delay time) [in milliseconds]
+            </delay>
+            <stepsPerRevolution val="200">
+                Amount of steps per full revolution
+            </stepsPerRevolution>
+            <wheelRadius val="50">
+                Radius of the wheel used on this stepper [in millimeters]
+                2 * pi * Radius / stepsPerRevolution
+            </wheelRadius>
+        </params>
+    </hardwarePiece>
+    <hardwarePiece name="Ystepper">
+        <title>
+            X axis stepper
+        </title>
+        <pins>
+            <step val="12">
+                Step pin
+            </step>
+            <direction val="13">
+                Direction pin
+            </direction>
+        </pins>
+        <params>
+            <defaultDirection val="1">
+                Default direction (axis starts at its trailer)
+            </defaultDirection>
+            <delay val="10">
+                Delay used by onestep() function (one step takes 2*delay time) [in milliseconds]
+            </delay>
+            <stepsPerRevolution val="200">
+                Amount of steps per full revolution
+            </stepsPerRevolution>
+            <wheelRadius val="50">
+                Radius of the wheel used on this stepper [in millimeters]
+            </wheelRadius>
+        </params>
+    </hardwarePiece>
+    <hardwarePiece name="Zstepper">
+        <title>
+            X axis stepper
+        </title>
+        <pins>
+            <step val="14">
+                Step pin
+            </step>
+            <direction val="15">
+                Direction pin
+            </direction>
+        </pins>
+        <params>
+            <defaultDirection val="1">
+                Default direction (axis starts at its trailer)
+            </defaultDirection>
+            <delay val="10">
+                Delay used by onestep() function (one step takes 2*delay time) [in milliseconds]
+            </delay>
+            <stepsPerRevolution val="200">
+                Amount of steps per full revolution
+            </stepsPerRevolution>
+            <wheelRadius val="50">
+                Radius of the wheel used on this stepper [in millimeters]
+            </wheelRadius>
+        </params>
+    </hardwarePiece>
+    <hardwarePiece name="Xrail">
+        <title>
+            X axis rail
+        </title>
+        <params>
+            <lenght val="2000">
+                X axis rail lenght (effective for movement) [in millimeters]
+            </lenght>
+        </params>
+    </hardwarePiece>
+    <hardwarePiece name="Yrail">
+        <title>
+            X axis rail
+        </title>
+        <params>
+            <lenght val="1500">
+                X axis rail lenght (effective for movement) [in millimeters]
+            </lenght>
+        </params>
+    </hardwarePiece>
+    <hardwarePiece name="Zrail">
+        <title>
+            X axis rail
+        </title>
+        <params>
+            <lenght val="1200">
+                X axis rail lenght (effective for movement) [in millimeters]
+            </lenght>
+        </params>
+    </hardwarePiece>
+</hardwareList>
