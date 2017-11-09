@@ -52,10 +52,10 @@ hardware:
             pins:
                 step:
                     name: "Step pin"
-                    val: 10
+                    val: 14
                 direction:
                     name: "Direction pin"
-                    val: 11
+                    val: 15
             parameters:
                 defaultDirection:
                     name: "Default direction (axis starts at its trailer)"
@@ -89,4 +89,23 @@ hardware:
                 lenght:
                     name: "Z axis rail lenght (effective for movement) [in millimeters]"
                     val: 2000
+    trailers:
+        Xtrailer:
+            name: "X axis trailer"
+            pins:
+                signal:
+                    name: "Signal pin"
+                    val: 16
+        Ytrailer:
+            name: "Y axis trailer"
+            pins:
+                signal:
+                    name: "Signal pin"
+                    val: 17
+        Ztrailer:
+            name: "Z axis trailer"
+            pins:
+                signal:
+                    name: "Signal pin"
+                    val: 18
 ...

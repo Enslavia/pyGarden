@@ -1,0 +1,13 @@
+---
+hardware:
+    steppers:
+        Xstepper:
+            name: "X axis stepper"
+            currPosition: -1
+        Ystepper:
+            name: "Y axis stepper"
+            currPosition: -1
+        Zstepper:
+            name: "Z axis stepper"
+            currPosition: -1
+...
